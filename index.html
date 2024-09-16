@@ -258,24 +258,25 @@
                     <img src="./assets/img/ilu.svg" alt="" class="svgt">
                   </div>
                   <!-- checkout formspree.io for easy form setup -->
-                  <form class="work-request">
-                  
+                  <form class="work-request" action="https://formsubmit.co/emicampos1268@gmail.com" method="POST">
                     <div class="work-request--information">
                       <div class="information-name">
-                        <input id="name" type="text" spellcheck="false" />
-                        <label for="name" style="font-size: 1rem;">Tu consulta...</label>
+                        <input id="consulta" name="consulta" type="text" spellcheck="false" required />
+                        <label for="consulta" style="font-size: 1rem;">Tu consulta...</label>
                       </div>
                       <div class="information-email">
-                        <input id="email" type="email" spellcheck="false" />
+                        <input id="email" name="email" type="email" spellcheck="false" required />
                         <label for="email" style="font-size: 1rem;">Email</label>
                       </div>
+                      <input type="hidden" name="_next" value="https://emilianocampos.netlify.app/">
                     </div>
-                   
-                    
-                    <button class="button tada animated" id="btn" type="submit" value="Enviar" >
+                  
+                    <button class="button tada animated" id="btn" type="submit" value="Enviar" id="submit" >
                       ENVIAR
                      </button>
                   </form>
+                    
+                
                 </div>
               </li>
             </ul>
@@ -300,6 +301,7 @@
           '<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>'
         );
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/functions-min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
