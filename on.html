@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Emiliano Campos</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Desarrollado web" />
+    <meta
+      name="keywords"
+      content="emiliano, emiliano campos, html, css, js, desarrollofrontend"
+    />
+    <meta name="author" content="Emiliano Campos" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://anijs.github.io/lib/anicollection/anicollection.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logoc.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/anijs.css" />
+  </head>
+  <body>
+    <div class="perspective effect-rotate-left">
+      <div class="container">
+        <div class="outer-nav--return"></div>
+        <div id="viewport" class="l-viewport">
+          <div class="l-wrapper">
+            <a href="index.html" style="display: flex; align-items: center; gap: 10px;">
+             <p style="color: white;">Volver</p>
+              <img src="./assets/img/icons8-volver-40.png" alt="" style="width: 30px; " />
+            </a>
+
+            <div class="hire">
+              <h2>Comenzemos a trabajar juntos</h2>
+              <div style="display: flex; justify-content: center">
+                <img src="./assets/img/ilu.svg" alt="" class="svgt" />
+              </div>
+              <!-- checkout formspree.io for easy form setup -->
+              <form class="work-request">
+                <div class="work-request--information">
+                  <div class="information-name">
+                    <input id="name" type="text" spellcheck="false" />
+                    <label for="name" style="font-size: 1rem"
+                      >Tu consulta...</label
+                    >
+                  </div>
+                  <div class="information-email">
+                    <input id="email" type="email" spellcheck="false" />
+                    <label for="email" style="font-size: 1rem">Email</label>
+                  </div>
+                </div>
+
+                <button
+                  class="button tada animated"
+                  id="btn"
+                  type="submit"
+                  value="Enviar"
+                  style="    position: relative;
+    top: -21px;"
+                >
+                  ENVIAR
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="anijs-min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>'
+        );
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/functions-min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
